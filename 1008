@@ -1,0 +1,23 @@
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+
+int num, horas;
+float sph, salario;
+
+
+int main() {
+    
+ scanf("%i %i", &num, &horas);
+ scanf("%f", &sph);
+
+salario = (sph*horas);
+ 
+ printf("NUMBER = %i\n", num);
+ printf("SALARY = U$ %.2f\n", salario);
+ 
+    return 0;
+}
