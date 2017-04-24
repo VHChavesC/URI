@@ -1,0 +1,48 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+
+int main () {
+
+	double n1, n2, n3, n4, nrec, media, mediaf;
+	
+scanf("%lf %lf %lf %lf", &n1, &n2, &n3, &n4);	
+media=(((2*n1)+(3*n2)+(4*n3)+(1*n4))/10);
+
+	if(media>=7)
+	 {
+	printf("Media: %.1lf\n", media); 	
+ 	printf("Aluno aprovado.\n");
+ 	return 0;
+	 }
+	 
+	 		else if(media>=5 && media<=6.9)
+			{
+			printf("Media: %.1lf\n", media);
+			printf("Aluno em exame.\n");
+			scanf("%lf", &nrec);
+			printf("Nota do exame: %.1lf\n", nrec);
+			mediaf=((nrec+media)/2);
+				if (mediaf>=5)
+				 {
+				 printf("Aluno aprovado.\n");
+				 printf("Media final: %.1lf\n", mediaf);
+				 }
+					else
+					{
+				     printf("Aluno reprovado.\n");
+				     printf("Media final: %.1lf\n", mediaf);
+					}	
+				return 0;		
+			}
+			
+		else (media<5);
+		{
+		printf("Media: %.1lf\n", media);
+		printf("Aluno reprovado.\n");
+		return 0;	
+		} 
+	
+return 0;
+
+}
